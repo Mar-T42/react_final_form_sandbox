@@ -39,7 +39,7 @@ const formValidationSchema = yup.object().shape({
 
 const App = () => (
     <div>
-        <h1>React Final Form - Simple Example</h1>
+        <h1>React Final Form & Yup - Playground</h1>
         <a href="https://github.com/erikras/react-final-form#-react-final-form">
             Read Docs
         </a>
@@ -188,7 +188,12 @@ const App = () => (
                             Reset
                         </button>
                     </div>
-                    <pre>{JSON.stringify(values, 0, 2)}</pre>
+                    <pre>
+                        <fieldset>
+                            <legend>State (values):</legend>
+                            {JSON.stringify(values, 0, 2)}
+                        </fieldset>
+                    </pre>
                 </form>
             )}
         />
